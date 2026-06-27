@@ -6,7 +6,7 @@ import traceback
 import requests
 from datetime import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), 'templates'))
 CORS(app)
 app.secret_key = os.environ.get ("SECRET_KEY", "")
 
