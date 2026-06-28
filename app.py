@@ -15,7 +15,7 @@ app.secret_key = os.environ.get ("SECRET_KEY", "email-generator-secret-2024")
 # ============================
 API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "mistralai/mistral-small-3.2-24b-instruct:free"
+MODEL = "cohere/north-mini-code:free"
 
 def call_ai(prompt, max_tokens=1024):
     headers = {
