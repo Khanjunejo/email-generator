@@ -21,7 +21,7 @@ def call_ai(prompt, max_tokens=1024):
     headers = {
         "Authorization": f"Bearer {API_KEY}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5000",
+        "HTTP-Referer": "https://web-production-1132c.up.railway.app",
         "X-Title": "Email Generator"
     }
     body = {
