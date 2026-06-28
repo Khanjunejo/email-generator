@@ -8,7 +8,7 @@ from datetime import datetime
 
 app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), 'templates'))
 CORS(app)
-app.secret_key = os.environ.get ("SECRET_KEY", "")
+app.secret_key = os.environ.get ("SECRET_KEY", "email-generator-secret-2024")
 
 # ============================
 # OPENROUTER API
