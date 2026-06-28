@@ -14,8 +14,8 @@ app.secret_key = os.environ.get ("SECRET_KEY", "email-generator-secret-2024")
 # OPENROUTER API
 # ============================
 API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-API_URL = ""
-MODEL = ""
+API_URL = "https://openrouter.ai/api/v1/chat/completions"
+MODEL = "nex-agi/nex-n2-pro:free"
 
 def call_ai(prompt, max_tokens=1024):
     headers = {
